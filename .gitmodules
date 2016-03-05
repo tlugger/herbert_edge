@@ -1,0 +1,12 @@
+[submodule "blocks/communication"]
+	path = blocks/communication
+	url = git@github.com:nio-blocks/communication.git
+[submodule "blocks/filter"]
+	path = blocks/filter
+	url = git@github.com:nio-blocks/filter.git
+[submodule "blocks/logger"]
+	path = blocks/logger
+	url = git@github.com:nio-blocks/logger.git
+[submodule "blocks/simulator"]
+	path = blocks/simulator
+	url = git@github.com:nio-blocks/simulator.git
