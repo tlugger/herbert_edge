@@ -48,13 +48,10 @@
         "main": {
             "level": "NOTSET"
         },
-        "WebServer": {
+        "main.WebServer": {
             "level": "INFO"
         },
-        "service": {
-            "level": "INFO"
-        },
-        "ServiceManager": {
+        "main.ServiceManager": {
             "level": "INFO"
         }
     }
