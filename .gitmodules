@@ -10,12 +10,3 @@
 [submodule "blocks/simulator"]
 	path = blocks/simulator
 	url = git@github.com:nio-blocks/simulator.git
-[submodule "blocks/post_signal"]
-	path = blocks/post_signal
-	url = git@github.com:nio-blocks/post_signal.git
-[submodule "blocks/socketio"]
-	path = blocks/socketio
-	url = git@github.com:nio-blocks/socketio.git
-[submodule "blocks/reduce"]
-	path = blocks/reduce
-	url = git@github.com:nio-blocks/reduce.git
