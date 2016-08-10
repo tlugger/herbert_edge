@@ -1,6 +1,17 @@
+# OS and IDE Files
+*.swp
+*~
+._*
+.DS_Store
+*.ipr
+*.iml
+*.iws
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+.cache
 
 # C extensions
 *.so
