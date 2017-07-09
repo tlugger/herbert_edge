@@ -10,3 +10,6 @@
 [submodule "blocks/simulator"]
 	path = blocks/simulator
 	url = git@github.com:nio-blocks/simulator.git
+[submodule "service_tests"]
+	path = service_tests
+	url = git://github.com/nioinnovation/service_tests.git
