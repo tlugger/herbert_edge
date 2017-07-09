@@ -1,15 +1,18 @@
 [submodule "blocks/communication"]
 	path = blocks/communication
-	url = git@github.com:nio-blocks/communication.git
+	url = git://github.com/nio-blocks/communication.git
 [submodule "blocks/filter"]
 	path = blocks/filter
-	url = git@github.com:nio-blocks/filter.git
+	url = git://github.com/nio-blocks/filter.git
 [submodule "blocks/logger"]
 	path = blocks/logger
-	url = git@github.com:nio-blocks/logger.git
+	url = git://github.com/nio-blocks/logger.git
 [submodule "blocks/simulator"]
 	path = blocks/simulator
-	url = git@github.com:nio-blocks/simulator.git
+	url = git://github.com/nio-blocks/simulator.git
+[submodule "blocks/dynamic_fields"]
+	path = blocks/dynamic_fields
+	url = git://github.com/nio-blocks/dynamic_fields.git
 [submodule "service_tests"]
 	path = service_tests
 	url = git://github.com/nioinnovation/service_tests.git
