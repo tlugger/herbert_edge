@@ -36,6 +36,7 @@
         "comm": {
             "level": "ERROR",
             "class": "nio.util.logging.handlers.publisher.handler.PublisherHandler",
+            "topic": "nio_logging.[[INSTANCE_ID]].__service_name__",
             "formatter": "default",
             "filters": ["niofilter", "log_signal_filter", "cache_filter"]
         }
@@ -52,6 +53,12 @@
             "level": "INFO"
         },
         "main.ServiceManager": {
+            "level": "INFO"
+        },
+        "pubkeeper.client": {
+            "level": "INFO"
+        },
+        "pubkeeper.protocol": {
             "level": "INFO"
         }
     }
