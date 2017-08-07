@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nio:
+    build: .
+    ports:
+      - 8181:8181
+      - 9000-9199:9000-9199
+    environment:
+      - INSTANCE_NAME=my_instance
+    volumes:
+      - .:/nio/project
