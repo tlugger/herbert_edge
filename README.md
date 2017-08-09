@@ -51,19 +51,19 @@ To push your project to GitHub (or other remote repository)
 
 **tests**<br>A folder for your tests with an example set up for a service test.
 
-**Dockerfile**<br>A script to create a docker image of the project in order to ease deployment.
+**Dockerfile**<br>A script to create a docker image of the project and ease deployment.
 
-**docker-compose.yml**<br>A configuration file used by docker-compose to document and configure all of the application’s dependencies.
+**docker-compose.yml**<br>A configuration file used by docker-compose to document and configure the application’s dependencies.
 
-**nio.conf**<br>A file that contains the {{ book.product }} project configuration. Default values are shown.
+**nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
 **nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
 
 ## Encrypting ZMQ Communications
 
-The generate_certificates.py script will generate public and private
-certificates under the public_keys and private_keys folders in the current
-directory. Use argument -t to specify a different target root directory.
+The `generate_certificates.py` script will generate public and private
+certificates under the `public_keys` and `private_keys` folders in the current
+directory. Use the argument -t to specify a different target root directory.
 
 To launch the script, navigate to the `etc` directory, and run
 
