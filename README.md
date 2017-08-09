@@ -18,27 +18,27 @@ The Project Template is a base template used to create a new [nio](n.io) project
 
 To clone the project template using git
 1. clone the template and initialize the submodules which contain the blocks.
-```
-git clone https://github.com/nioinnovation/project_template.git <project_name>
-cd <project_name>
-git submodule update --init --recursive
-```
+    ```
+    git clone https://github.com/nioinnovation/project_template.git <project_name>
+    cd <project_name>
+    git submodule update --init --recursive
+    ```
 1. Remove the tracking link to the original template repository and reset ownership to yourself
-```
-git remote remove origin
-git commit --amend --reset-author -m "Initial Commit"
-```
+    ```
+    git remote remove origin
+    git commit --amend --reset-author -m "Initial Commit"
+    ```
 To push your project to GitHub (or other remote repository)
 
 1. Create a new online repository for your project and then copy the **Clone or download** URL.
-1. Back in your local repository, from the command line, link tracking to the new remote repository using the URL you copied.
-```
-git remote add origin <new_project_repo_url>
-```
+1. Back in your local repository, from the command line, link the remote tracking information to the new repository using the URL you copied.
+    ```
+    git remote add origin <new_project_repo_url>
+    ```
 1. Push to a branch (usually `master`).
-```
-git push --set-upstream origin master
-```
+    ```
+    git push --set-upstream origin master
+    ```
 
 ### File Reference
 
