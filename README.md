@@ -1,14 +1,14 @@
 # Project Template
 
-The Project Template is a base template used to create a new [nio](n.io) project with the recommended files and file structure.
+The Project Template is a base template used to create a new nio project with the recommended files and file structure.
 
 ## How to Use
 
 ### Clone the Project Template (or Fork?)
 
-  There are two ways to clone the project template. One is using the nio CLI and the other is to clone it to your local machine as you would any other GitHub repository.
+  There are two ways to clone the project template. One is using the nio command line interface (CLI) and the other is to clone it to your local machine as you would any other GitHub repository.
 
-#### Using the nio CLI
+#### To Clone Using the nio CLI
 
   If you have the nio-cli package installed `pip3 install nio-cli`, you can create a new project directory with
 
@@ -16,10 +16,10 @@ The Project Template is a base template used to create a new [nio](n.io) project
     nio new <new_project_name>
   ```
 
-#### Using git
+#### To Clone Using git
 
 To clone the project template using git
-1. clone the template and initialize the submodules which contain the blocks.
+1. Clone the template and initialize the submodules which contain the blocks.
     ```
     git clone https://github.com/nioinnovation/project_template.git <new_project_name>
     cd <new_project_name>
@@ -32,7 +32,8 @@ To clone the project template using git
     ```
 To push your project to GitHub (or other remote repository)
 
-1. Create a new online repository for your project and then copy the **Clone or download** URL.
+1. Create a new online repository for your project
+1. Copy the "Quick setup" URL on the next screen to your clipboard.
 1. Back in your local repository, from the command line, link the remote tracking information to the new repository using the URL you copied.
     ```
     git remote add origin <new_project_repo_url>
@@ -44,10 +45,10 @@ To push your project to GitHub (or other remote repository)
 
 ### File Reference
 
-**blocks**<br>Block types, as submodules, are kept in this folder. The project template comes with a few of the most commonly used block types. Block types from the block library or block types you create can be added to this directory.
+**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types from the block library or block types you create can be added to this directory.
 
 **etc**
-<br>Project configurations and scripts. For example, the script to [encrypt zmq communications](#encrypting-zmq-communications).
+<br>A folder containing project configurations and scripts. For example, the script to [encrypt zmq communications](#encrypting-zmq-communications).
 
 **service_tests**<br>A submodule for service tests that includes `NioServiceTestCase` and other tools for service testing.
 
@@ -61,7 +62,7 @@ To push your project to GitHub (or other remote repository)
 
 **nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
 
-## Encrypting ZMQ Communications
+## Encrypting ZMQ Communications (Should this go in a README in the etc directory?)
 
 The `generate_certificates.py` script will generate public and private
 certificates under the `public_keys` and `private_keys` folders in the current
