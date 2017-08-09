@@ -4,11 +4,13 @@ The Project Template is a base template used to create a new [nio](n.io) project
 
 ## How to Use
 
-### Clone the Project Template
+### Clone the Project Template (or Fork?)
+
   There are two ways to clone the project template. One is using the nio CLI and the other is to clone it to your local machine as you would any other GitHub repository.
+
 #### Using the nio CLI
 
-  If you have [nio installed](https://docs.n.io/getting_started/locally.html) on your machine, you can use the CLI to create a new project directory.
+  If you have the nio-cli package installed `pip3 install nio-cli`, you can create a new project directory with
 
   ```
     nio new <new_project_name>
@@ -53,7 +55,7 @@ To push your project to GitHub (or other remote repository)
 
 **Dockerfile**<br>A script to create a docker image of the project and ease deployment.
 
-**docker-compose.yml**<br>A configuration file used by docker-compose to document and configure the application’s dependencies.
+**docker-compose.yml**<br>A file that configures your application so that all its dependencies can be started with one command.
 
 **nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
