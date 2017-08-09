@@ -60,7 +60,7 @@ To push your project to GitHub (or another remote repository)
 
 **nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
 
-## Encrypting ZMQ Communications (Should this go in a README in the etc directory?)
+## Encrypting ZMQ Communications
 
 The `generate_certificates.py` script will generate public and private
 certificates under the `public_keys` and `private_keys` folders in the current
