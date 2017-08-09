@@ -14,7 +14,7 @@ The Project Template is a base template used to create a new nio project with th
     nio new <new_project_name>
   ```
 
-#### Clone Using git
+### Clone Using git
 
 To clone the project template using git
 1. Clone the template and initialize the submodules which contain the blocks.
@@ -41,12 +41,12 @@ To push your project to GitHub (or another remote repository)
     git push --set-upstream origin master
     ```
 
-### File Reference
+## File Reference
 
 **blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types from the block library or block types you create can be added to this directory.
 
 **etc**
-<br>A folder containing project configurations and scripts. For example, the script to [encrypt zmq communications](#encrypting-zmq-communications).
+<br>A folder containing project configurations and scripts. For example, the script to [encrypt zmq communications](#encrypting-zmq-communications) is in this folder.
 
 **service_tests**<br>A submodule for service tests that includes `NioServiceTestCase` and other tools for service testing.
 
