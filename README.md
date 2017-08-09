@@ -30,11 +30,10 @@ To clone the project template using git
     ```
 To push your project to GitHub (or another remote repository)
 
-1. Create a new online repository for your project
-1. Copy the "Quick setup" URL on the next screen to your clipboard.
-1. In your local repository, from the command line, link the remote tracking information to the new repository using the URL you copied.
+1. Create a new online repository for your project.
+1. In your local repository, from the command line, link the remote tracking information to the new repository.
     ```
-    git remote add origin <new_project_repo_url>
+    git remote add origin <new_project_repo_URL>
     ```
 1. Push to a branch (usually `master`).
     ```
