@@ -19,7 +19,7 @@ The Project Template is a base template used to create a new nio project with th
 To clone the project template using git
 1. Clone the template and initialize the submodules which contain the blocks.
     ```
-    git clone https://github.com/nioinnovation/project_template.git <new_project_name>
+    git clone --depth=1 https://github.com/nioinnovation/project_template.git <new_project_name>
     cd <new_project_name>
     git submodule update --init --recursive
     ```
