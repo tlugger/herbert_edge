@@ -17,26 +17,26 @@ The Project Template is a base template used to create a new [nio](n.io) project
 #### Using git
 
 To clone the project template using git
-  1. clone the template and initialize the submodules which contain the blocks.
+1. clone the template and initialize the submodules which contain the blocks.
 
     git clone https://github.com/nioinnovation/project_template.git <project_name>
     cd <project_name>
     git submodule update --init --recursive
 
-  1. Remove the tracking link to the original template repository and reset ownership to yourself
+1. Remove the tracking link to the original template repository and reset ownership to yourself
 
     git remote remove origin
     git commit --amend --reset-author -m "Initial Commit"
 
 To push your project to GitHub (or other remote repository)
 
-  1. Create a new online repository for your project and then copy the **Clone or download** URL.
-  1. Back in your local repository, from the command line, link tracking to the new remote repository using the URL you copied.
+1. Create a new online repository for your project and then copy the **Clone or download** URL.
+1. Back in your local repository, from the command line, link tracking to the new remote repository using the URL you copied.
 
-        `git remote add origin <new_project_repo_url>`
-  1. Push to a branch (usually `master`).
+    git remote add origin <new_project_repo_url>
+1. Push to a branch (usually `master`).
 
-        `git push --set-upstream origin master`
+    git push --set-upstream origin master
 
 ### File Reference
 
@@ -55,9 +55,9 @@ To push your project to GitHub (or other remote repository)
 
 **nio.conf**<br>A file that contains the {{ book.product }} project configuration. Default values are shown.
 
-**nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`. 
+**nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
 
-## Encrypting zmq communications
+## Encrypting ZMQ Communications
 
 The generate_certificates.py script will generate public and private
 certificates under the public_keys and private_keys folders in the current
