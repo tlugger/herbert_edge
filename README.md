@@ -4,11 +4,9 @@ The Project Template is a base template used to create a new nio project with th
 
 ## How to Use
 
-### Clone the Project Template (or Fork?)
+  You can clone this project template using the nio command line interface (CLI) or git.
 
-  There are two ways to clone the project template. One is using the nio command line interface (CLI) and the other is to clone it to your local machine as you would any other GitHub repository.
-
-#### To Clone Using the nio CLI
+### Clone Using the nio CLI
 
   If you have the nio-cli package installed `pip3 install nio-cli`, you can create a new project directory with
 
@@ -16,7 +14,7 @@ The Project Template is a base template used to create a new nio project with th
     nio new <new_project_name>
   ```
 
-#### To Clone Using git
+#### Clone Using git
 
 To clone the project template using git
 1. Clone the template and initialize the submodules which contain the blocks.
@@ -30,11 +28,11 @@ To clone the project template using git
     git remote remove origin
     git commit --amend --reset-author -m "Initial Commit"
     ```
-To push your project to GitHub (or other remote repository)
+To push your project to GitHub (or another remote repository)
 
 1. Create a new online repository for your project
 1. Copy the "Quick setup" URL on the next screen to your clipboard.
-1. Back in your local repository, from the command line, link the remote tracking information to the new repository using the URL you copied.
+1. In your local repository, from the command line, link the remote tracking information to the new repository using the URL you copied.
     ```
     git remote add origin <new_project_repo_url>
     ```
@@ -54,9 +52,9 @@ To push your project to GitHub (or other remote repository)
 
 **tests**<br>A folder for your tests with an example set up for a service test.
 
-**Dockerfile**<br>A script to create a docker image of the project and ease deployment.
+**Dockerfile**<br>A script to create a docker image of the project. Docker can be used to ease deployment.
 
-**docker-compose.yml**<br>A file that configures your application so that all its dependencies can be started with one command.
+**docker-compose.yml**<br>A file that configures your application so that all its dependencies can be started with a single command.
 
 **nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
