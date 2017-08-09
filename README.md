@@ -8,10 +8,10 @@ The Project Template is a base template used to create a new [nio](n.io) project
   There are two ways to clone the project template. One is using the nio CLI and the other is to clone it to your local machine as you would any other GitHub repository.
 #### Using the nio CLI
 
-  If you have [nio installed](docs.n.io) on your machine, you can use the CLI to create a new project directory.
+  If you have [nio installed](https://docs.n.io/getting_started/locally.html) on your machine, you can use the CLI to create a new project directory.
 
   ```
-    nio new <project_name>
+    nio new <new_project_name>
   ```
 
 #### Using git
@@ -19,8 +19,8 @@ The Project Template is a base template used to create a new [nio](n.io) project
 To clone the project template using git
 1. clone the template and initialize the submodules which contain the blocks.
     ```
-    git clone https://github.com/nioinnovation/project_template.git <project_name>
-    cd <project_name>
+    git clone https://github.com/nioinnovation/project_template.git <new_project_name>
+    cd <new_project_name>
     git submodule update --init --recursive
     ```
 1. Remove the tracking link to the original template repository and reset ownership to yourself
