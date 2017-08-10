@@ -8,9 +8,10 @@ The Project Template is a base template used to create a new nio project with th
 
 ### Clone Using the nio CLI
 
-  If you have the nio-cli package installed `pip3 install nio-cli`, you can create a new project directory with
+You can create a new project directory with the nio-cli
 
   ```
+    pip3 install nio-cli
     nio new <new_project_name>
   ```
 
@@ -31,7 +32,8 @@ To clone the project template using git
 To push your project to GitHub (or another remote repository)
 
 1. Create a new online repository for your project.
-1. In your local repository, from the command line, link the remote tracking information to the new repository.
+1. You will be given a unique URL for your new repository. Copy this URL to your clipboard.
+1. In your local repository, from the command line, set the remote tracking information to the new repository.
     ```
     git remote add origin <new_project_repo_URL>
     ```
@@ -42,10 +44,10 @@ To push your project to GitHub (or another remote repository)
 
 ## File Reference
 
-**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types from the block library or block types you create can be added to this directory.
+**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types can be added and removed, either from the block library or your own block types that you develop.
 
 **etc**
-<br>A folder containing project configurations and scripts. For example, the script to [encrypt zmq communications](#encrypting-zmq-communications) is in this folder.
+<br>A folder containing project configurations and scripts.
 
 **service_tests**<br>A submodule for service tests that includes `NioServiceTestCase` and other tools for service testing.
 
@@ -53,20 +55,8 @@ To push your project to GitHub (or another remote repository)
 
 **Dockerfile**<br>A script to create a docker image of the project. Docker can be used to ease deployment.
 
-**docker-compose.yml**<br>A file that configures your application so that all its dependencies can be started with a single command.
+**docker-compose.yml**<br>A file that can be used with Docker to configure your application so that all its dependencies can be started with a single command.
 
 **nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
 **nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
-
-## Encrypting ZMQ Communications
-
-The `generate_certificates.py` script will generate public and private
-certificates under the `public_keys` and `private_keys` folders in the current
-directory. Use the argument -t to specify a different target root directory.
-
-To launch the script, navigate to the `etc` directory, and run
-
-```
-python scripts/generate_certificates.py
-```
