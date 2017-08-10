@@ -18,7 +18,7 @@ You can create a new project directory with the nio-cli
 ### Clone Using git
 
 To clone the project template using git
-1. Clone the template and initialize the submodules which contain the blocks.
+1. Create a shallow clone of the template and initialize the submodules which contain the blocks.
     ```
     git clone --depth=1 https://github.com/nioinnovation/project_template.git <new_project_name>
     cd <new_project_name>
@@ -53,9 +53,9 @@ To push your project to GitHub (or another remote repository)
 
 **tests**<br>A folder for your tests with an example set up for a service test.
 
-**Dockerfile**<br>A script to create a docker image of the project. Docker can be used to ease deployment.
+**Dockerfile**<br>An optional script to create a docker image of the project. Docker can be used as a tool to ease deployment.
 
-**docker-compose.yml**<br>A file that can be used with Docker to configure your application so that all its dependencies can be started with a single command.
+**docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
 
 **nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
