@@ -16,3 +16,18 @@
 [submodule "service_tests"]
 	path = service_tests
 	url = git://github.com/nioinnovation/service_tests.git
+[submodule "blocks/state_change"]
+	path = blocks/state_change
+	url = git://github.com/nio-blocks/state_change.git
+[submodule "blocks/hash_table"]
+	path = blocks/hash_table
+	url = git://github.com/nio-blocks/hash_table.git
+[submodule "blocks/merge_streams"]
+	path = blocks/merge_streams
+	url = git://github.com/nio-blocks/merge_streams.git
+[submodule "blocks/dynamic_replicator"]
+	path = blocks/dynamic_replicator
+	url = git://github.com/nio-blocks/dynamic_replicator.git
+[submodule "blocks/attribute_selector"]
+	path = blocks/attribute_selector
+	url = git://github.com/nio-blocks/attribute_selector.git
