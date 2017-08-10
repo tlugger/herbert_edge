@@ -44,7 +44,7 @@ To push your project to GitHub (or another remote repository)
 
 ## File Reference
 
-**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types can be added and removed, either from the block library or your own block types that you develop.
+**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types can be added and removed. Additional block types can be found in the block library and added through the System Designer, or, you can add your own custom block types here. 
 
 **etc**
 <br>A folder containing project configurations and scripts.
