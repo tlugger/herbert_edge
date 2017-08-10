@@ -4,7 +4,7 @@ The Project Template is a base template used to create a new nio project with th
 
 ## How to Use
 
-  You can clone this project template using the nio command line interface (CLI) or git.
+  Clone this project template using the nio command line interface (CLI) or git.
 
 ### Clone Using the nio CLI
 
@@ -18,15 +18,24 @@ You can create a new project directory with the nio-cli
 ### Clone Using git
 
 To clone the project template using git
-1. Create a shallow clone of the template and initialize the submodules which contain the blocks.
+1. Create a shallow clone of the template.
     ```
     git clone --depth=1 https://github.com/nioinnovation/project_template.git <new_project_name>
+    ```
+1. Navigate into your new project directory.
+    ```
     cd <new_project_name>
+    ```
+1. Initialize the submodules containing the blocks and service test tools.
+    ```
     git submodule update --init --recursive
     ```
-1. Remove the tracking link to the original template repository and reset ownership to yourself
+1. Remove the tracking link to the original template repository.
     ```
     git remote remove origin
+    ```
+1. Reset ownership to yourself.
+    ```
     git commit --amend --reset-author -m "Initial Commit"
     ```
 To push your project to GitHub (or another remote repository)
@@ -44,7 +53,7 @@ To push your project to GitHub (or another remote repository)
 
 ## File Reference
 
-**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types can be added and removed. Additional block types can be found in the block library and added through the System Designer, or, you can add your own custom block types here. 
+**blocks**<br>A directory that contains block types, as submodules. The project template comes with a few of the most commonly used block types. Block types can be added and removed. Additional block types can be found in the block library and added through the System Designer, or, you can add your own custom block types here.
 
 **etc**
 <br>A folder containing project configurations and scripts.
@@ -53,7 +62,7 @@ To push your project to GitHub (or another remote repository)
 
 **tests**<br>A folder for your tests with an example set up for a service test.
 
-**Dockerfile**<br>An optional script to create a docker image of the project. Docker can be used as a tool to ease deployment.
+**Dockerfile**<br>An optional script to create a Docker image of the project. Docker can be used as a tool to ease deployment.
 
 **docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
 
