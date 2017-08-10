@@ -28,3 +28,6 @@
 [submodule "blocks/attribute_selector"]
 	path = blocks/attribute_selector
 	url = git://github.com/nio-blocks/attribute_selector.git
+[submodule "blocks/merge_streams"]
+	path = blocks/merge_streams
+	url = git://github.com/nio-blocks/merge_streams.git
