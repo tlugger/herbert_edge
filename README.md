@@ -4,7 +4,7 @@ The Project Template is a base template used to create a new nio project with th
 
 ## How to Use
 
-  Clone this project template using the nio command line interface (CLI) or git.
+  Clone this project template using the nio command line interface (CLI) or Git.
 
 ### Clone Using the nio CLI
 
@@ -15,18 +15,18 @@ You can create a new project directory with the nio-cli
     nio new <new_project_name>
   ```
 
-### Clone Using git
+### Clone Using Git
 
-To clone the project template using git
+To clone the project template using Git
 1. Create a shallow clone of the template.
     ```
     git clone --depth=1 https://github.com/nioinnovation/project_template.git <new_project_name>
     ```
-1. Navigate into your new project directory.
+1. Navigate to your new project directory.
     ```
     cd <new_project_name>
     ```
-1. Initialize the submodules containing the blocks and service test tools.
+1. Initialize the submodules containing the blocks and the service test tools.
     ```
     git submodule update --init --recursive
     ```
@@ -41,8 +41,8 @@ To clone the project template using git
 To push your project to GitHub (or another remote repository)
 
 1. Create a new online repository for your project.
-1. You will be given a unique URL for your new repository. Copy this URL to your clipboard.
-1. In your local repository, from the command line, set the remote tracking information to the new repository.
+1. Copy the unique URL for your new repository to your clipboard.
+1. In your local repository, from the command line, add the remote tracking information for the new repository.
     ```
     git remote add origin <new_project_repo_URL>
     ```
@@ -62,10 +62,10 @@ To push your project to GitHub (or another remote repository)
 
 **tests**<br>A folder for your tests with an example set up for a service test.
 
-**Dockerfile**<br>An optional script to create a Docker image of the project. Docker can be used as a tool to ease deployment.
+**Dockerfile**<br>An optional script to create a Docker image of the project. Docker can be used as a tool in deployments.
 
 **docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
 
 **nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
 
-**nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore`.
+**nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore` file.
