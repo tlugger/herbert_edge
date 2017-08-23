@@ -10,18 +10,9 @@
 [submodule "blocks/simulator"]
 	path = blocks/simulator
 	url = git://github.com/nio-blocks/simulator.git
-[submodule "blocks/dynamic_fields"]
-	path = blocks/dynamic_fields
-	url = git://github.com/nio-blocks/dynamic_fields.git
 [submodule "service_tests"]
 	path = service_tests
 	url = git://github.com/nioinnovation/service_tests.git
-[submodule "blocks/state_change"]
-	path = blocks/state_change
-	url = git://github.com/nio-blocks/state_change.git
-[submodule "blocks/hash_table"]
-	path = blocks/hash_table
-	url = git://github.com/nio-blocks/hash_table.git
 [submodule "blocks/attribute_selector"]
 	path = blocks/attribute_selector
 	url = git://github.com/nio-blocks/attribute_selector.git
@@ -31,3 +22,12 @@
 [submodule "blocks/replicator"]
 	path = blocks/replicator
 	url = git@github.com:nio-blocks/replicator.git
+[submodule "blocks/modifier"]
+	path = blocks/modifier
+	url = git@github.com:nio-blocks/modifier.git
+[submodule "blocks/state"]
+	path = blocks/state
+	url = git@github.com:nio-blocks/state.git
+[submodule "blocks/join"]
+	path = blocks/join
+	url = git@github.com:nio-blocks/join.git
