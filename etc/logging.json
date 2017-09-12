@@ -42,7 +42,7 @@
         }
     },
     "root": {
-        "handlers": ["default", "file"],
+        "handlers": ["default", "file", "comm"],
         "level": "WARNING"
     },
     "loggers": {
