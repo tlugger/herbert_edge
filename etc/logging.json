@@ -34,7 +34,7 @@
             "filters": ["niofilter"]
         },
         "comm": {
-            "level": "ERROR",
+            "level": "INFO",
             "class": "nio.util.logging.handlers.publisher.handler.PublisherHandler",
             "topic": "nio_logging.[[INSTANCE_ID]].__service_name__",
             "formatter": "default",
