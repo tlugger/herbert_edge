@@ -12,7 +12,7 @@
 	url = git://github.com/nio-blocks/simulator.git
 [submodule "service_tests"]
 	path = service_tests
-	url = git://github.com/nioinnovation/service_tests.git
+	url = git://github.com/niolabs/service_tests.git
 [submodule "blocks/attribute_selector"]
 	path = blocks/attribute_selector
 	url = git://github.com/nio-blocks/attribute_selector.git
@@ -21,13 +21,13 @@
 	url = git://github.com/nio-blocks/merge_streams.git
 [submodule "blocks/replicator"]
 	path = blocks/replicator
-	url = git@github.com:nio-blocks/replicator.git
+	url = git://github.com/nio-blocks/replicator.git
 [submodule "blocks/modifier"]
 	path = blocks/modifier
-	url = git@github.com:nio-blocks/modifier.git
+	url = git://github.com/nio-blocks/modifier.git
 [submodule "blocks/state"]
 	path = blocks/state
-	url = git@github.com:nio-blocks/state.git
+	url = git://github.com/nio-blocks/state.git
 [submodule "blocks/join"]
 	path = blocks/join
-	url = git@github.com:nio-blocks/join.git
+	url = git://github.com/nio-blocks/join.git
