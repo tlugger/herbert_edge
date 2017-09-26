@@ -20,7 +20,7 @@ You can create a new project directory with the nio-cli
 To clone the project template using Git
 1. Create a shallow clone of the template.
     ```
-    git clone --depth=1 https://github.com/nioinnovation/project_template.git <new_project_name>
+    git clone --depth=1 https://github.com/niolabs/project_template.git <new_project_name>
     ```
 1. Navigate to your new project directory.
     ```
