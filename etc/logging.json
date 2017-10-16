@@ -14,7 +14,7 @@
         },
         "cache_filter": {
             "()": "nio.util.logging.handlers.publisher.cache_filter.CacheFilter",
-            "expire_interval": 1
+            "expire_interval": 0.2
         }
     },
     "handlers": {
