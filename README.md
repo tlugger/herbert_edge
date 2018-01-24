@@ -66,6 +66,4 @@ To push your project to GitHub (or another remote repository)
 
 **docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
 
-**nio.conf**<br>A file that contains the nio project configuration. Default values are shown.
-
-**nio.env**<br>A file containing environment variables for the project. If this file contains secrets, you will want to add it to the `.gitignore` file.
+**nio.conf**<br>A file that contains the nio project configuration. Default values are shown. If this file contains secrets, you will want to add it to the `.gitignore` file.
