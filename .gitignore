@@ -70,6 +70,7 @@ docs/_build/
 *.swp
 
 # nio stuff
-logs
+logs/
 etc/persist/
 nio.err
+etc/api_key.cfg
