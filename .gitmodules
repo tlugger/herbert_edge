@@ -4,9 +4,6 @@
 [submodule "blocks/filter"]
 	path = blocks/filter
 	url = git://github.com/nio-blocks/filter.git
-[submodule "blocks/logger"]
-	path = blocks/logger
-	url = git://github.com/nio-blocks/logger.git
 [submodule "blocks/simulator"]
 	path = blocks/simulator
 	url = git://github.com/nio-blocks/simulator.git
@@ -31,3 +28,6 @@
 [submodule "blocks/join"]
 	path = blocks/join
 	url = git://github.com/nio-blocks/join.git
+[submodule "blocks/logger"]
+	path = blocks/logger
+	url = https://github.com/nio-blocks/logger
