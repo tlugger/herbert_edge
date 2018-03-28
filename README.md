@@ -66,4 +66,14 @@ To push your project to GitHub (or another remote repository)
 
 **docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
 
-**nio.conf**<br>A file that contains the nio project configuration. Default values are shown. If this file contains secrets, you will want to add it to the `.gitignore` file.
+**nio.conf**
+A simple project configuration file that has reasonable defaults set for you.
+
+**nio.conf.example**
+A file that contains the reference for all nio project configuration options. Default values are shown. If this file contains secrets, you will want to add it to the `.gitignore` file.
+
+**pk_server.conf**
+A project configuration file that can be included to run your binary with a standlone pubkeeper server. This is a partial config file so it should be included with another more complete configuration file. Example:
+```
+niod -s nio.conf -s pk_server.conf
+```
