@@ -72,8 +72,8 @@ A simple project configuration file that has reasonable defaults set for you.
 **nio.conf.example**
 A file that contains the reference for all nio project configuration options. Default values are shown. If this file contains secrets, you will want to add it to the `.gitignore` file.
 
-**standalone.conf**
+**pk_server.conf**
 A project configuration file that can be included to run your binary with a standlone pubkeeper server. This is a partial config file so it should be included with another more complete configuration file. Example:
 ```
-niod -s nio.conf -s standalone.conf
+niod -s nio.conf -s pk_server.conf
 ```
