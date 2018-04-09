@@ -236,27 +236,21 @@ secure=[[PK_SECURE]]
 brews=pubkeeper.brew.local.brew.LocalBrew, pubkeeper.brew.websocket.brew.WebsocketBrew
 
 [pubkeeper_server]
-# Specifies whether this nio instance launches its own Pubkeeper Server
+# This section controls configuration for the embedded Pubkeeper server
 #
+# Set to True if the pubkeeper server should run in this nio instance
 #standalone=False
 
-# JWT Secret.  Used to validate tokens clients give to authenticate
+# The IP Address and port to bind the PK server to
 #
-jwt_secret=[[PKS_JWT_SECRET]]
-
-# Static address to use (default: 127.0.0.1)
-#
-ip_address=[[PKS_ADDR]]
+#ip_address=0.0.0.0
+#port=9898
 
 # Interface, auto-detect the address of the provided interface
 # and use it as the address to bind to.  This is used only if
 # the PKS_ADDR (ip_address) is not set (default: lo0)
 #
-interface=[[PKS_INTERFACE]]
-
-# Port to run the server on (default: 9898)
-#
-port=[[PKS_PORT]]
+#interface=lo0
 
 # Maximum time to wait in seconds for Pubkeeper Server to start (note: relevant
 # ony when in standalone mode)
@@ -266,6 +260,30 @@ port=[[PKS_PORT]]
 # the server will close the connection (default: 10)
 #
 #websocket_ping_interval=10
+
+[pubkeeper_server_auth]
+# This section controls configuration for the way that clients authenticate
+# with the embedded Pubkeeper server
+#
+# We must set an auth type of either "internal" or "local"
+#
+# Internal auth (default) means we can manually set a token in this 
+# configruation that clients will need to use to connect with
+#auth_type = internal
+#token = [[ PK_TOKEN ]]
+
+# For local auth, we connect to a database to manage our tokens
+# This will spin up an auth server and UI to manage the tokens as well
+#auth_type = local
+# validate is the URL used by LocalAuthProvider to lookup the provided token
+#validate = http://localhost:9898/auth/validate
+# The database where we can store the tokens
+#database = sqlite:///tokens.db
+# Example connecting via postgres
+#database = postgresql://user:pass@localhost:5432/dbname
+#enable_ui = True
+# The token to seed the database with if it doesn't exist yet
+#initial_token = [[ PK_TOKEN ]]
 
 [pubkeeper.brew.local.brew.LocalBrew]
 # use localhost rather than unix domain socket
