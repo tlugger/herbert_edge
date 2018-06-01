@@ -95,6 +95,10 @@ disabled=SNMPAgent, PubkeeperServer
 #
 #async_start=true
 
+# when configuring a service, configure blocks asynchronously
+#
+#blocks_async_configure=true
+
 # when starting a service, start blocks asynchronously
 #
 #blocks_async_start=false
