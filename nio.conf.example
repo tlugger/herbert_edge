@@ -239,6 +239,9 @@ secure=[[PK_SECURE]]
 #
 brews=pubkeeper.brew.local.brew.LocalBrew, pubkeeper.brew.websocket.brew.WebsocketBrew
 
+# allow to work asynchronously
+async=True
+
 [pubkeeper_server]
 # This section controls configuration for the embedded Pubkeeper server
 #
