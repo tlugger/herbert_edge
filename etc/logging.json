@@ -1,5 +1,6 @@
 {
     "version": 1,
+    "disable_existing_loggers": false,
     "formatters": {
         "default": {
             "format": "[%(niotime)s] NIO [%(levelname)s] [%(context)s] %(message)s"
