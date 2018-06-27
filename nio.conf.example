@@ -534,6 +534,48 @@ ssl_certificate_chain:
 #
 #status_traps=error
 
+# Configuration component
+[configuration]
+
+# url prefix to use when calling the Product API
+#product_api_url_prefix = [[PRODUCT_API_URL_PREFIX]]
+
+# instance identifier
+#instance_id = [[INSTANCE_ID]]
+
+# specifies if modified services are to be started/stopped based on the
+# auto_start flag
+#start_stop_services=True
+
+# specifies if existing blocks and services are to be deleted when not found
+# in the incoming configuration
+#delete_missing=False
+
+# GCP IOT Core
+[gcp_iot_core]
+
+# gcp iot core connection settings
+# project_id=
+# project_region=
+# registry_id=
+# device_id=
+# private_key_file=
+# ca_cert=
+
+# publish interval of host system information to be sent for Stackdriver logging
+# monitor_interval= 30
+
+# allows for quicker disconnect occurrence and potential sync
+keep_alive: 60
+
+# specifies if modified services are to be started/stopped based on the
+# auto_start flag
+#start_stop_services=True
+
+# specifies if existing blocks and services are to be deleted when not found
+# in the incoming configuration
+#delete_missing=False
+
 # ZMQ based communication module - Legacy
 [communication]
 
