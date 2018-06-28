@@ -538,10 +538,14 @@ ssl_certificate_chain:
 [configuration]
 
 # url prefix to use when calling the Product API
-#product_api_url_prefix = [[PRODUCT_API_URL_PREFIX]]
+#config_api_url_prefix = https://api.nio.works/v1/instance_configurations
 
-# instance identifier
-#instance_id = [[INSTANCE_ID]]
+# configuration identifiers
+#config_id=
+#config_version_id=
+
+# specifies how often to poll for configuration updates
+#config_poll_interval=0
 
 # specifies if modified services are to be started/stopped based on the
 # auto_start flag
