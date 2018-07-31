@@ -460,13 +460,9 @@ subscriber_client_secret_cert=[[SUBSCRIBER_CLIENT_SECRET_CERT]]
 #
 #signals=true
 
-# enable a failure queue
-#
-#failure_queue=true
-
 # size of the failure queue in messages queued
 #
-#failure_queue_len=10000
+#failure_queue_len=100
 
 # specifies if INSTANCE_ID is appended to the topic specified in management_publisher
 #
