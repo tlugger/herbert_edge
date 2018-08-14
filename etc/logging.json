@@ -56,10 +56,7 @@
         "main.ServiceManager": {
             "level": "INFO"
         },
-        "pubkeeper.client": {
-            "level": "INFO"
-        },
-        "pubkeeper.protocol": {
+        "pubkeeper": {
             "level": "INFO"
         }
     }
