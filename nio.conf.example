@@ -409,6 +409,10 @@ subscriber_client_secret_cert=[[SUBSCRIBER_CLIENT_SECRET_CERT]]
 #
 #permissions=etc/permissions.json
 
+# boolean to allow passwords to be stored as plain text or bcrypt hashes
+#
+#allow_unhashed_passwords=true
+
 # [security.oauth]
 #
 ## json configuration that maps users to permissions - can point to a conf file
