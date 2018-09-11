@@ -242,6 +242,16 @@ brews=pubkeeper.brew.local.brew.LocalBrew, pubkeeper.brew.websocket.brew.Websock
 # allow to work asynchronously
 async=True
 
+# Whether this instance can be used as a bridge node in tke PK system
+#bridge_mode=False
+
+# How long to queue messages in each publisher when they are performing their initial connection
+#initial_connect_queue_timeout=5
+
+#Max length of the initial connection queue, per publisher
+#initial_connect_queue_max_length=1000
+
+
 [pubkeeper_server]
 # This section controls configuration for the embedded Pubkeeper server
 #
