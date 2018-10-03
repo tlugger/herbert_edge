@@ -559,7 +559,7 @@ ssl_certificate_chain:
 
 # specifies if existing blocks and services are to be deleted when not found
 # in the incoming configuration
-#delete_missing=False
+#delete_missing=True
 
 # GCP IOT Core
 [gcp_iot_core]
@@ -584,7 +584,7 @@ keep_alive: 60
 
 # specifies if existing blocks and services are to be deleted when not found
 # in the incoming configuration
-#delete_missing=False
+#delete_missing=True
 
 # ZMQ based communication module - Legacy
 [communication]
