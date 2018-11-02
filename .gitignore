@@ -74,3 +74,6 @@ logs/
 etc/persist/
 nio.err
 etc/api_key.cfg
+etc/instance_id.cfg
+
+irrigation_log.csv

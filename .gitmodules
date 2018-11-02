@@ -31,3 +31,18 @@
 [submodule "blocks/logger"]
 	path = blocks/logger
 	url = https://github.com/nio-blocks/logger
+[submodule "blocks/gpio"]
+	path = blocks/gpio
+	url = git://github.com/nio-blocks/gpio.git
+[submodule "blocks/dht22"]
+	path = blocks/dht22
+	url = git://github.com/nio-blocks/dht22.git
+[submodule "blocks/sleep"]
+	path = blocks/sleep
+	url = git://github.com/nio-blocks/sleep.git
+[submodule "blocks/csv_files"]
+	path = blocks/csv_files
+	url = git://github.com/nio-blocks/csv_files.git
+[submodule "blocks/debounce"]
+	path = blocks/debounce
+	url = git://github.com/nio-blocks/debounce.git
