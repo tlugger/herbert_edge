@@ -1,55 +1,24 @@
-# Project Template
+# Automated IoT Plant Irrigation
 
-The Project Template is a base template used to create a new nio project with the recommended files and file structure.
+Edge project to run on an edge node for controling the irrigation of a desk plant based on soil moistrue measurements.
 
 ## How to Use
 
   Clone this project template using the nio command line interface (CLI) or Git.
-
-### Clone Using the nio CLI
-
-You can create a new project directory with the nio-cli
-
   ```
-    pip3 install nio-cli
-    nio new <new_project_name>
+  nio new plant-node -t https://github.com/tlugger/herbert_edge.git
   ```
 
-### Clone Using Git
+## Hardware Used
 
-To clone the project template using Git
-1. Create a shallow clone of the template.
-    ```
-    git clone --depth=1 https://github.com/niolabs/project_template.git <new_project_name>
-    ```
-1. Navigate to your new project directory.
-    ```
-    cd <new_project_name>
-    ```
-1. Initialize the submodules containing the blocks and the service test tools.
-    ```
-    git submodule update --init --recursive
-    ```
-1. Remove the tracking link to the original template repository.
-    ```
-    git remote remove origin
-    ```
-1. Reset ownership to yourself.
-    ```
-    git commit --amend --reset-author -m "Initial Commit"
-    ```
-To push your project to GitHub (or another remote repository)
+- [Raspberry Pi 3 B+](https://www.sparkfun.com/products/14643)
+- [DHT22 Temperature Humidity Sensor](https://www.sparkfun.com/products/12796)
+- [Soil Moisture Sensor](https://www.sparkfun.com/products/13637)
+- [3-4.5V DC Motor](https://www.ebay.com/itm/Super-Mini-Tiny-DC-3-4-5V-Brushless-Motor-Submersible-Water-Pump-/391957543219)
+- [Marina Tubing](http://a.co/d/4tPAHSp)
+- [NPN Transistor](https://www.sparkfun.com/products/13689)
+- [Jumper Wires](https://www.sparkfun.com/products/12796)
 
-1. Create a new online repository for your project.
-1. Copy the unique URL for your new repository to your clipboard.
-1. In your local repository, from the command line, add the remote tracking information for the new repository.
-    ```
-    git remote add origin <new_project_repo_URL>
-    ```
-1. Push to a branch (usually `master`).
-    ```
-    git push --set-upstream origin master
-    ```
 
 ## File Reference
 
@@ -58,22 +27,5 @@ To push your project to GitHub (or another remote repository)
 **etc**
 <br>A folder containing project configurations and scripts.
 
-**service_tests**<br>A submodule for service tests that includes `NioServiceTestCase` and other tools for service testing.
-
-**tests**<br>A folder for your tests with an example set up for a service test.
-
-**Dockerfile**<br>An optional script to create a Docker image of the project. Docker can be used as a tool in deployments.
-
-**docker-compose.yml**<br>A file optionally used in conjunction with Docker to configure your application so that all its dependencies can be started with a single command.
-
 **nio.conf**
 A simple project configuration file that has reasonable defaults set for you.
-
-**nio.conf.example**
-A file that contains the reference for all nio project configuration options. Default values are shown. If this file contains secrets, you will want to add it to the `.gitignore` file.
-
-**pk_server.conf**
-A project configuration file that can be included to run your binary with a standlone pubkeeper server. This is a partial config file so it should be included with another more complete configuration file. Example:
-```
-niod -s nio.conf -s pk_server.conf
-```
