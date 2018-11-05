@@ -19,6 +19,9 @@ Edge project to run on an edge node for controling the irrigation of a desk plan
 - [NPN Transistor](https://www.sparkfun.com/products/13689)
 - [Jumper Wires](https://www.sparkfun.com/products/12796)
 
+## Wiring Schematic
+
+![](https://s3-us-west-2.amazonaws.com/cilantr.io/images/Herbie.png "Wiring Schematic")
 
 ## File Reference
 
