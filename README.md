@@ -1,6 +1,6 @@
 # Automated IoT Plant Irrigation
 
-Edge project to run on an edge node for controling the irrigation of a desk plant based on soil moistrue measurements.
+Edge project to run on an edge node for controll the irrigation of a desk plant based on soil moisture measurements.
 
 ## How to Use
 
@@ -17,11 +17,12 @@ Edge project to run on an edge node for controling the irrigation of a desk plan
 - [3-4.5V DC Motor](https://www.ebay.com/itm/Super-Mini-Tiny-DC-3-4-5V-Brushless-Motor-Submersible-Water-Pump-/391957543219)
 - [Marina Tubing](http://a.co/d/4tPAHSp)
 - [NPN Transistor](https://www.sparkfun.com/products/13689)
+- [1K Ohm Resistor](https://www.sparkfun.com/products/14492)
 - [Jumper Wires](https://www.sparkfun.com/products/12796)
 
 ## Wiring Schematic
 
-![](https://s3-us-west-2.amazonaws.com/cilantr.io/images/Herbie.png "Wiring Schematic")
+![](https://s3-us-west-2.amazonaws.com/cilantr.io/images/Herbie+Sketch+v2.png "Wiring Schematic")
 
 ## File Reference
 
