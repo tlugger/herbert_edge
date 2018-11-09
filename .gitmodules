@@ -46,3 +46,6 @@
 [submodule "blocks/debounce"]
 	path = blocks/debounce
 	url = git://github.com/nio-blocks/debounce.git
+[submodule "blocks/mcp300x"]
+	path = blocks/mcp300x
+	url = git://github.com/nio-blocks/mcp300x.git
