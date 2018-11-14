@@ -22,7 +22,7 @@ Edge project to run on an edge node for controll the irrigation of a desk plant 
 
 ## Wiring Schematic
 
-![](https://s3-us-west-2.amazonaws.com/cilantr.io/images/Herbie+Sketch+v2.png "Wiring Schematic")
+![](https://s3-us-west-2.amazonaws.com/cilantr.io/images/Herbie+Sketch+v3.png "Wiring Schematic")
 
 ## File Reference
 
